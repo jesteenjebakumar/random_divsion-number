@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random number</title>
+    <link rel="stylesheet" href="./tailwind.css">
+</head>
+
+<body>
+    <p class="text-4xl bg-yellow-400 text-white text-center px-2 py-3">division number    </p>
+    <div class=" flex flex-wrap  bg-red-400">
+        <div class="lg:w-1/2">
+
+            <img class="w-full h-full  p-0 " src="./evendence.PNG" alt="">
+        </div>
+        <div class="w-full lg:w-1/2">
+
+            <p class="text-yellow text-bold text-gray-700 text-2xl lg:text-4xl xl:text-6xl rounded p-3">this will create a random  division number 
+                in that two levels are there  hard and low levels in low leveal two digit number will be there 
+                and hard levels three are more number will be there minium one click 6 numbers are  generate.  
+            </p>
+        </div>
+    </div>
+    <div class="bg-red-200 rounded flex">
+        <select name=" " class="p-4 bg-purple-50 rounded done w-1/2 md:w-1/2 " id="selector"> 
+            <option value="select">select an option</option>
+            <option value="low">low</option>
+            <option value="high">hard</option>
+        </select>
+   
+            <button class="w-1/2 py-auto animate-pulse lg:animate-none font-bold text-2xl smooth lg:hover:bg-red-600 transition-colors transition-opacity rounded bg-yellow-700 lg:bg-yellow-500 text-white" onclick="create()" id="remove">click here</button>
+        
+    </div>
+    <div class="bg-red-500 p-5 text-white flex">
+
+        <p class="text-3xl" id="number">the number</p><p class="text-3xl pl-4">by</p><p class=" text-3xl text-center pl-4 pr-2" id="secondnumber"></p>
+    </div>
+    <div class="bg-red-500 p-5 text-white flex">
+
+        <p class="text-3xl" id="number">the number</p><p class="text-3xl pl-4">by</p><p class=" text-3xl text-center pl-4 pr-2" id="secondnumber"></p>
+    </div> <div class="bg-red-500 p-5 text-white flex">
+
+        <p class="text-3xl" id="number">the number</p><p class="text-3xl pl-4">by</p><p class=" text-3xl text-center pl-4 pr-2" id="secondnumber"></p>
+    </div>
+</div> <div class="bg-red-500 p-5 text-white flex">
+
+    <p class="text-3xl" id="number">the number</p><p class="text-3xl pl-4">by</p><p class=" text-3xl text-center pl-4 pr-2" id="secondnumber"></p>
+</div>
+</div> <div class="bg-red-500 p-5 text-white flex">
+
+    <p class="text-3xl" id="number">the number</p><p class="text-3xl pl-4">by</p><p class=" text-3xl text-center pl-4 pr-2" id="secondnumber"></p>
+</div>
+</div> <div class="bg-red-500 p-5 text-white flex">
+
+    <p class="text-3xl" id="number">the number</p><p class="text-3xl pl-4">by</p><p class=" text-3xl text-center pl-4 pr-2" id="secondnumber"></p>
+</div>
+<div class="bg-pink-400 text-3xl">
+    <p class="font-bold  p-3 text-gray-700">help guise for the webage</p>
+    <video class="w-full" src="./guide.mp4" controls></video>
+</div>
+<div class="bg-green-500 text-center mx-auto text-3xl text-white">
+    <p>if you want to check the answer of division number click below link </p>
+    <div class="flex ">
+
+        <a href="https://jesteenjebakumar.github.io/division_checker_part-2/" class="text-red-700 mx-auto font-extrabold" target="blank">click here</a>
+    </div>
+</div>
+<div class="p-5 w-full rounded-xl  bg-purple-200">
+    <div class="mx-auto  grid  xl:grid-cols-2 w-full xl:w-1/2 ">
+        <p class="font-bold text-white px-3 py-2 pb-7 text-3xl lg:block xl:hidden text-center">telegram help group</p>
+<img src="telegramlogo.png"  alt="telegramlogo" class="px-1 pb-4 xl:w-auto w-full my-auto py-auto">
+<div class="text-white font-semibold   w-full text-2xl text-blue-500">
+   <p class="font-bold text-3xl xl:block hidden text-center">telegram help group</p>
+   <p>if you want any help conact through telegram group 
+       link will be in the button are you don't know the option also don't bougher obout it 
+   </p>
+   <div class="flex ">
+
+       <button class="text-white mx-2   font-sans  lg:mx-auto px-2 py-3 my-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl"><a href="https://t.me/+ADMlDyUMhq45OGE1" target="blank">click here</a> </button>
+   </div>
+</div>
+    </div></div>
+</div>
+</body>
+<script>
+    //number
+  var check=true;
+  var remove_animation=document.getElementById('remove');
+var number=document.querySelectorAll('#number');
+var bynumber=document.querySelectorAll('#secondnumber');
+var selector=document.getElementById('selector');
+// var random=Math.floor(Math.random() * 1000) + 1  ;
+// var random_second=Math.floor(Math.random()*10)+1;
+// // var random=Math.floor(Math.random() * total number) + starting number  ;
+//  number.innerHTML=random;
+// bynumber.innerHTML=random_second;
+
+function create(){
+remove_animation.classList.remove('animate-pulse');
+    // selector.addEventListener('input',()=>{
+        if(selector.value=="select"){
+    alert('please select an option ');
+    
+    selector.style.border="4px";
+        }
+       else if(selector.value=="low"){
+        var random=Math.floor(Math.random() * 1000) + 1  ;
+    var random_second=Math.floor(Math.random()*10)+1;
+        for(let i=0; i<6;i++){
+            var random=Math.floor(Math.random() * 1000) + 1  ;
+    var random_second=Math.floor(Math.random()*10)+1;
+    number[i].innerHTML=random;
+    bynumber[i].innerHTML=random_second;
+        }
+        }
+        else  if(selector.value=="high"){
+            for(let i=0; i<6;i++){
+
+                var random=Math.floor(Math.random() * 1000) + 1  ;
+        var random_second=Math.floor(Math.random()*2000)+1;
+        number[i].innerHTML=random;
+        bynumber[i].innerHTML=random_second;
+            }
+        }
+        
+        // var random=Math.floor(Math.random() * total number) + starting number  ;
+    
+    // });
+}
+
+     selector.onclick=()=>{
+        selector.style.border="0";
+    
+
+}
+</script>
+<style>
+.done{
+border-color: red;
+}
+.smooth{
+    transition: all .5s linear;
+}
+</style>
+</html>
